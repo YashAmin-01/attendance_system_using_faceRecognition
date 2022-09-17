@@ -4,6 +4,7 @@ import cv2
 from datetime import datetime
 import face_recognition
 import joblib
+import os
 from warnings import filterwarnings
 
 filterwarnings('ignore')
@@ -32,6 +33,10 @@ def click_picture():
     return frame
 
 def record_attendance(name, direction):
+    if 'attendance.csv' not in os.listdir():
+        attendance = pd.DataFrame(columns=['Name','Date','Time','Entry/Exit'])
+        attendance.to_csv('attendance.csv')
+
     attendance_log = pd.read_csv('attendance.csv', index_col=[0])
     date = datetime.now()
 

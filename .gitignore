@@ -130,8 +130,8 @@ dmypy.json
 
 env
 images
-attendance.csv
 attendance.py
 encodings.csv
 preprocessing.py
 Untitled.ipynb
+attendance.csv
