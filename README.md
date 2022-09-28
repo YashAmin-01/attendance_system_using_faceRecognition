@@ -1,5 +1,11 @@
 # attendance_system_using_faceRecognition
 
+How to run application??
+-download and store all files in same folder
+-create new empty folder with name 'images'
+-open command prompt and install required libraries by running given command --> pip install -r requirements.txt
+-once required libraries are installed, you can run the required files for which the uses are given below
+
 1. get_faces.py
 -run this file to register new user and create database of new user by clicking 20 images
 -for better results try to change angle of face while facing the camera so that every image is different
