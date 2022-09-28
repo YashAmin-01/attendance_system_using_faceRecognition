@@ -52,7 +52,7 @@ def detect_face(encodings):
     model = joblib.load('trained_models/facerec_model.model')
     prob = model.predict_proba(encodings)
     
-    if prob.max() > 0.6:
+    if prob.max() > 0.7:
         return model.classes_[np.argmax(prob)]
     else:
         return 'unknown'
